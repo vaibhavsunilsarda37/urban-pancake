@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.pancake-container {
+  position: relative;
+}
+
+.pancake {
+  width: 100px;
+  height: 20px;
+  background-color: #f39c12;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  animation: pancakeFlip 2s infinite alternate;
+}
+
+@keyframes pancakeFlip {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
